@@ -26,7 +26,7 @@ const products = [
     label: "",
     detail: "Home · Stoneware",
     price: 28,
-    image: "https://images.unsplash.com/photo-1514228742587-6b1558fCCA3d?auto=format&fit=crop&w=720&q=85",
+    image: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=720&q=85",
     alt: "Handmade ceramic coffee cup"
   },
   {
