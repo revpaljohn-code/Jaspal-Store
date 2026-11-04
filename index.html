@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f3ee">
+    <meta name="description" content="Thoughtful everyday objects, made to be used. Discover the Forma Supply collection.">
+    <title>Forma Supply — Objects for everyday</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">Complimentary shipping on orders over $75 <span aria-hidden="true">✳</span></div>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Forma Supply home">forma<span>.</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#shop">Shop all</a>
+        <a href="#story">Our approach</a>
+      </nav>
+      <button class="cart-trigger" id="cart-open" type="button" aria-label="Open shopping bag">
+        Bag <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Considered goods, made for the everyday</p>
+          <h1>Good things.<br><em>Good for keeps.</em></h1>
+          <p class="hero-description">Useful objects, honest materials, and a little more thought in the things we reach for every day.</p>
+          <a class="button button-dark" href="#shop">Explore the collection <span aria-hidden="true">↗</span></a>
+          <div class="hero-note"><span>01 — 04</span><span>Designed to go places</span></div>
+        </div>
+        <div class="hero-art" role="img" aria-label="A sculptural canvas tote and ceramic bottle in warm afternoon light">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <div class="hero-sun"></div>
+          <div class="hero-object hero-bag"><span>forma<br>goods</span></div>
+          <div class="hero-object hero-bottle"></div>
+          <div class="hero-object hero-cup"></div>
+          <span class="art-caption">THE EVERYDAY EDIT — Nº 04</span>
+          <span class="art-stamp">MADE<br>TO LAST</span>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Our values">
+        <div class="ticker-track">
+          <span>Less, but better</span><b>✳</b><span>Built for real life</span><b>✳</b><span>Materials with meaning</span><b>✳</b><span>Less, but better</span><b>✳</b><span>Built for real life</span><b>✳</b><span>Materials with meaning</span><b>✳</b>
+        </div>
+      </section>
+
+      <section class="shop-section section-wrap" id="shop">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Small things, big difference</p>
+            <h2>Meet your new <em>usual.</em></h2>
+          </div>
+          <p class="section-aside">Four everyday favorites.<br>Thoughtfully made, ready to go.</p>
+        </div>
+        <div class="shop-toolbar">
+          <div class="filter-list" role="group" aria-label="Filter products">
+            <button class="filter-button is-active" data-filter="all" type="button" aria-pressed="true">All objects <span>04</span></button>
+            <button class="filter-button" data-filter="carry" type="button" aria-pressed="false">Carry</button>
+            <button class="filter-button" data-filter="home" type="button" aria-pressed="false">Home</button>
+          </div>
+          <label class="search-box">
+            <span class="visually-hidden">Search products</span>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.7" cy="8.7" r="5.8"></circle><path d="m13 13 4 4"></path></svg>
+            <input id="product-search" type="search" placeholder="Find something..." autocomplete="off">
+          </label>
+        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <p class="empty-state" id="empty-state" hidden>No objects found. Try another search.</p>
+        <div class="shop-footnote"><span>✳</span> Free shipping on orders over $75 <span class="footnote-divider"></span> Easy 30-day returns</div>
+      </section>
+
+      <section class="story-section" id="story">
+        <div class="story-art">
+          <div class="story-shape shape-large"></div>
+          <div class="story-shape shape-small"></div>
+          <span class="story-art-label">A LITTLE LESS, A LITTLE BETTER</span>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow">A note from Forma</p>
+          <h2>Make room for<br><em>the good stuff.</em></h2>
+          <p>We think the things you use every day deserve a little more care. So we choose useful shapes, lasting materials, and details that earn their place.</p>
+          <a class="text-link" href="#shop">Find your everyday favorite <span aria-hidden="true">↗</span></a>
+          <div class="story-signoff">With care, <span>forma.</span></div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <p class="eyebrow">The occasional good thing</p>
+        <h2>A note, now and <em>then.</em></h2>
+        <p>New objects, thoughtful ideas, and no unnecessary noise.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <label class="visually-hidden" for="email-address">Your email address</label>
+          <input id="email-address" type="email" placeholder="Your email address" required>
+          <button type="submit" aria-label="Join the mailing list">Join us <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="form-message" id="form-message" role="status"></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-mark" href="#top">forma<span>.</span></a>
+      <p>Everyday objects, considered.</p>
+      <span class="footer-copy">© <span id="current-year"></span> Forma Supply</span>
+    </footer>
+
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-modal="true" role="dialog" aria-hidden="true">
+      <div class="drawer-header">
+        <div><p class="eyebrow">Your good things</p><h2>Your bag <span id="drawer-count">(0)</span></h2></div>
+        <button class="icon-button" id="cart-close" type="button" aria-label="Close shopping bag">×</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><span>✳</span><p>Your bag is taking a little breather.</p><button class="text-link" id="keep-looking" type="button">Keep looking <span aria-hidden="true">↗</span></button></div>
+      <div class="drawer-footer" id="drawer-footer">
+        <div class="subtotal-row"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div>
+        <p>Shipping and taxes calculated at checkout.</p>
+        <button class="button button-dark checkout-button" id="checkout-button" type="button">Continue to checkout <span aria-hidden="true">↗</span></button>
+        <span class="demo-note">Demo storefront — checkout isn't connected yet.</span>
+      </div>
+    </aside>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
